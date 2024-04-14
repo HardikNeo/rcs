@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Rock Paper Scissors</h1>
+    </header>
+    <main class="main">
+      <section class="opt">
+        <button class="choice rock" onclick="play('rock')">rock</button>
+        <button class="choice paper" onclick="play('paper')">paper</button>
+        <button class="choice scissors" onclick="play('scissors')">
+          scissors
+        </button>
+      </section>
+      <section class="lower">
+        <div class="message">
+          <h1 id="msg">Please Make a Move</h1>
+          <button id="new" onclick="new()"><h1>New Game</h1></button>
+        </div>
+        <div class="score">
+          <h1>Matches Won:</h1>
+          <h1 class="count">0</h1>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>&copy;Hardik</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
