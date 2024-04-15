@@ -18,20 +18,18 @@
     </header>
     <main class="main">
       <section class="opt">
-        <button class="choice rock" onclick="play('rock')">rock</button>
-        <button class="choice paper" onclick="play('paper')">paper</button>
-        <button class="choice scissors" onclick="play('scissors')">
-          scissors
-        </button>
+        <button class="choice rock" onclick="play(1)">rock</button>
+        <button class="choice paper" onclick="play(2)">paper</button>
+        <button class="choice scissors" onclick="play(3)">scissors</button>
       </section>
       <section class="lower">
         <div class="message">
           <h1 id="msg">Please Make a Move</h1>
-          <button id="new" onclick="new()"><h1>New Game</h1></button>
+          <button id="new" onclick="newg()"><h1>New Game</h1></button>
         </div>
         <div class="score">
           <h1>Matches Won:</h1>
-          <h1 class="count">0</h1>
+          <h1 id="count">0</h1>
         </div>
       </section>
     </main>
